@@ -1,0 +1,145 @@
+.stepComp {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.25rem;
+    margin: 1rem;
+}
+
+.stepHeader {
+    background-color: rgba(0, 0, 255, 0.415);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stepHeaderText {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.stepHeaderValue {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.stepForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.stepField {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.stepInput {
+    margin-right: 1rem;
+}
+
+.stepLabelText {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    margin-left: 1rem;
+}
+
+.stepLabelValue {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    margin-right: 1rem;
+}
+
+.stepTextValue {
+    margin: 1rem;
+}
+
+#hraTextField,
+#hraInputField {
+    width: 15%;
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.415);
+    padding: 0.2rem;
+    justify-content: space-between;
+}
+
+.footerText {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+    padding: 0.5rem;
+}
+
+.displayBox {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.25rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.displayBoxHeader {
+    background-color: rgba(0, 0, 255, 0.415);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    color: white;
+    display: flex;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.displayBoxHeaderFieldsArea {
+    width: 100%;
+    display: flex;
+    margin: 0.1rem 1rem 0.1rem 1rem;
+}
+
+.displayBoxBody {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.displayBoxRow {
+    display: flex;
+    margin: 0.2rem 1rem 0.2rem 1rem;
+}
+
+.collapseButton {
+    width: 1rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    border-color: white;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.headerField {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.rowField {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+}
+
+.collapsedState {
+    transform: rotate(180deg);
+}
