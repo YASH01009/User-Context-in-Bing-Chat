@@ -7,9 +7,27 @@ app.use(bodyParser.json());
 
 const cache = new NodeCache();
 
+const pluginFolderPath = 'C:/Users/yashw/Documents/My Files/Projects/User Context in Bing Chat/data-server/plugin';
+
 app.get('/', (_, res) => {
   res.send('Hello, world!');
 });
+
+app.get('/logo.png', (_, res) => {
+  res.sendFile(`${pluginFolderPath}/logo.png`);
+})
+
+app.get('/.well-known/ai-plugin.json', (_, res) => {
+  res.sendFile(`${pluginFolderPath}/ai-plugin.json`);
+})
+
+app.get('/openapi.yaml', (_, res) => {
+  res.sendFile(`${pluginFolderPath}/openapi.yaml`);
+})
+
+app.get('/legal', (_, res) => {
+  res.send('We are legal!');
+})
 
 // this is the endpoint described in the
 // bing chat plugin, the chat calls this
@@ -40,6 +58,6 @@ app.delete('/msg/:id', (req, res) => {
   res.send('Message deleted!');
 });
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+app.listen(40442, () => {
+  console.log('Server listening on port 40442');
 });

@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+    title: User Info
+    description: A plugin for getting all the details known about the current user.
+    version: "v1"
+servers:
+    - url: http://localhost:40442
+paths:
+    /msgs:
+        get:
+            operationId: getDetails
+            summary: Get all the details about the user
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/getDetailsResponse"
+
+components:
+    schemas:
+        getDetailsResponse:
+            type: array
+            items:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of the property
+                desc:
+                  type: string
+                  description: The description about the property
+                val:
+                  type: string
+                  description: The value of the property
+            description: All known details about the user

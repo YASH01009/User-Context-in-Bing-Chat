@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "User Details (No Auth)",
+  "name_for_model": "User Info",
+  "description_for_human": "This serves all the messages that are put from the website the user is on",
+  "description_for_model": "Plugin for getting all the details known about the current user",
+  "auth": {
+      "type": "none"
+  },
+  "api": {
+      "type": "openapi",
+      "url": "http://localhost:40442/openapi.yaml"
+  },
+  "logo_url": "http://localhost:40442/logo.png",
+  "contact_email": "yashwinenamadis@outlook.com",
+  "legal_info_url": "http://localhost:40442/legal"
+}
