@@ -1,28 +1,29 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const NodeCache = require('node-cache');
+const nodeCache = require('node-cache');
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.json());
 
-const cache = new NodeCache();
+const cache = new nodeCache();
 
-const pluginFolderPath = 'C:/Users/yashw/Documents/My Files/Projects/User Context in Bing Chat/data-server/plugin';
+const pluginFolderPath = 'plugin';
 
 app.get('/', (_, res) => {
   res.send('Hello, world!');
 });
 
 app.get('/logo.png', (_, res) => {
-  res.sendFile(`${pluginFolderPath}/logo.png`);
+  res.sendFile(path.join(__dirname, pluginFolderPath, 'logo.png'));
 })
 
 app.get('/.well-known/ai-plugin.json', (_, res) => {
-  res.sendFile(`${pluginFolderPath}/ai-plugin.json`);
+  res.sendFile(path.join(__dirname, pluginFolderPath, 'ai-plugin.json'));
 })
 
 app.get('/openapi.yaml', (_, res) => {
-  res.sendFile(`${pluginFolderPath}/openapi.yaml`);
+  res.sendFile(path.join(__dirname, pluginFolderPath, 'openapi.yaml'));
 })
 
 app.get('/legal', (_, res) => {
